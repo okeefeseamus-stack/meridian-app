@@ -1,10 +1,10 @@
 // Keeps the app shell on the phone so Meridian opens instantly, even with no signal.
 // The news itself is fetched fresh from Apps Script on every open and never cached here.
-const VERSION = "meridian-v1";
+const VERSION = "meridian-v2";
 const SHELL = [
   "./", "index.html", "config.js", "manifest.webmanifest",
-  "icons/icon-180.png", "icons/icon-192.png", "icons/icon-512.png", "icons/favicon-64.png",
-  ...[1, 2, 3, 4, 5, 6, 7, 8].map((n) => `logo/meridian-0${n}.png`),
+  "icon-180.png", "icon-192.png", "icon-512.png", "favicon-64.png",
+  ...[1, 2, 3, 4, 5, 6, 7, 8].map((n) => `meridian-0${n}.png`),
 ];
 
 self.addEventListener("install", (e) => {
